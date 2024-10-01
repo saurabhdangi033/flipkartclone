@@ -69,13 +69,13 @@ const TotalView = ({ cartItems }) => {
     return (
         <Box>  {/* className={classes.component}> */}
             <Header>
-                <Heading>PRICE DETAILS</Heading>
+                {/* <Heading>PRICE DETAILS</Heading> */}
             </Header>
             <Container>
-            <Typography>Price Details</Typography>
+            {/* <Typography>Price Details</Typography>
             <Typography>Total MRP: ₹{totalMRP}</Typography>
             <Typography>Total Discount: ₹{totalMRP - totalPrice}</Typography>
-            <Typography>Total Amount: ₹{totalPrice}</Typography>
+            <Typography>Total Amount: ₹{totalPrice}</Typography> */}
             </Container>
         </Box>
     )
