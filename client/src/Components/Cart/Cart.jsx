@@ -57,12 +57,10 @@ const Cart = () => {
 
     const dispatch = useDispatch();
     
-      useEffect(() => {
-        cartItems.forEach(item => {
-            dispatch(addToCart(item.id, item.quantity)); // Ensure cart state is updated
-        });
-    }, [cartItems, dispatch]);
-
+    useEffect(() => {
+        if(cartItems && id !== cartItems.id)   
+            dispatch(addToCart(id));
+    }, [dispatch, cartItems, id]);
 
     const removeItemFromCart = (id) => {
         dispatch(removeFromCart(id));

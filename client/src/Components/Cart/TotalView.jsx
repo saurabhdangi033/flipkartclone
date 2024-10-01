@@ -51,7 +51,7 @@ const TotalView = ({ cartItems }) => {
     const [discount, setDiscount] = useState(0)
 
     const totalPrice = cartItems.reduce((acc, item) => acc + (item.price.cost * item.quantity), 0);
-const totalMRP = cartItems.reduce((acc, item) => acc + (item.price.mrp * item.quantity), 0);
+    const totalMRP = cartItems.reduce((acc, item) => acc + (item.price.mrp * item.quantity), 0);
     useEffect(() => {
         totalAmount();
     }, [cartItems]);
